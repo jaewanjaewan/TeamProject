@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box; 
+    font-family: 'Jua', sans-serif;
+ }
+html, body{ 
+     margin: 0;
+     padding: 0;
+ }
+html{
+     height: 100%;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+main{
+    position: absolute;
+    top: 40%;
+    margin:-150px 0 0 -150px;
+    height: 527px;
+    left: 46%;
+    width: 80%;
+}
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    text-decoration: none;
+    color: #bfdada;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+h1{
+    text-align: center;
+    color: #bfdada;
+}
+.input-group{
+    height: 60px;
+    margin-bottom: 10px;
+    border: 1px solid #bfdada;
+    background-color: #bfdada;
+}
+.find{
+    text-align: center;
+    color: #91aaaa;
+    margin-bottom: 10px;
+}
+.input-group-text{
+    border: 1px solid #bfdada;
+    background-color: #bfdada;
+
+}
+.form{
+    width: 30%;
+}
+.form-control{
+    border-left: 1px solid #bfdada;
+}
+.btn{
+    width: 202px;
+    left: 100%;
+    background-color: #bfdada;
+    border: 1px solid white;
+}
+.logjoin{
+    justify-content: right;
+    margin-bottom: 30px;
+}
+.line{
+    border-top: 2px solid #bfdada;
+    width: 30%;
+    height: 10%;
+}
+.btn-warning{
+    border: 1px solid white;
+    width: 30%;
+    height: 65px;
+}
+.btn-success{
+    border: 1px solid white;
+    width: 30%;
+    height: 65px;
+}
