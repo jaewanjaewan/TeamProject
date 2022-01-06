@@ -47,16 +47,18 @@
             </div>
             <div class="logjoin">
                 <input type="submit" class="btn btn-secondary" value="로그인"></input>
-                <input type="button" class="btn btn-secondary" value="회원가입"></button>
+                <a href="/html/join.html"><input type="button" class="btn btn-secondary" value="회원가입"></a>
             </div>
         </form>
         <div class="line"></div>
         <div>
-            <button type="button" class="btn-warning">카카오 로그인</button>
+            <img src="/img/kakao_login_large_narrow.png" id="kaobtn">
         </div>
-        <div>
-            <button type="button" class="btn-success">네이버 로그인</button>
-        </div>
+
+        <!-- <button type="button" class="btn-success">네이버 로그인</button> -->
+        <!-- <div id="naver_id_login"></div> -->
+        <div id="naver_id_login"></div>
+
         <!-- Optional JavaScript; choose one of the two! -->
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -70,6 +72,13 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
         -->
     </main>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="/js/kakao.js"></script>
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js"
+        charset="utf-8"></script>
+    <script src="/js/naver.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 </body>
 
 </html>
