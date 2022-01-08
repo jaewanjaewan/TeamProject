@@ -1,78 +1,52 @@
 *{
     box-sizing: border-box; 
     font-family: 'Jua', sans-serif;
+    margin: 0;
 }
 html, body{ 
     margin: 0;
     padding: 0;
-}
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    color: #bfdada;
-}
-h4{
-    padding: 20px;
-    display: inline-block;
-}
-html{
+    width: 100%;
     height: 100%;
 }
 body{
-   width: 100%;
-   height: 100%;
+    display: grid;
+    grid-template-columns: 1fr minmax(850px, 2fr) 1fr;
 }
-.top{
-    position: relative;
-    height: 50%;
+main{
+    padding-top: 75px;
 }
-.bottom{
-    position: relative;
-    height: 50%;
-}
-.top_container{
-    position: absolute;
-    top: 100px;
-    border-bottom: 2px solid #bfdada;
-    padding-bottom: 20px;
-    left: 500px;
-    width: 40%;
-}
-.bottom_container{
-    position: absolute;
-    top: 20px;
-    border-bottom: 2px solid #bfdada;
-    padding-bottom: 20px;
-    left: 500px;
-    width: 40%;
-}
-.inputbox{
-    position: absolute;
-    top: 45%;
-    left: 29%;
-    width: 40%;
-    height: 50%;
-}
-.form-control{
-    display: inline-block;
-    height: 45px;
-    width: 50%;
-    border: 2px solid #bfdada;
-}
-.btn-secondary{
-    margin-left: 10px;
-}
-#number_confirm{
-    width: 317px;
-}
-#inputbox{
-    top: 130px;
+form{
+    margin-top: 100px;
+    height: 250px;
 }
 .idbox{
-    padding-left: 30px;
+    border-bottom: 2px solid #bfdada;
 }
-#id_confirm{
-    width: 367px;
+.phonebox{
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
 }
-#password_confirm{
-    width: 351px;
+h1, h3{
+    display: inline-block;
+    color: #bfdada;
+}
+.form-control{
+    width: 350px;
+    display: inline-block;
+    margin-left: 40px;
+    height: 45px;
+}
+.btn-secondary{
+    margin-left: 30px;
+}
+.passwordbox{
+    border-bottom: 2px solid #bfdada;
+}
+.textid{
+    padding-left: 50px;
+}
+.id{
+    padding-right: 23px;
 }

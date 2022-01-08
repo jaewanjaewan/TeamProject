@@ -1,6 +1,6 @@
 var naver_id_login = new naver_id_login("FKI5X4pkLPGeuMSpAt6W", "http://127.0.0.1:5500/html/login.html");
 var state = naver_id_login.getUniqState();
-naver_id_login.setButton("green", 30, 88);
+naver_id_login.setButton("green", 3, 88);
 naver_id_login.setDomain("http://127.0.0.1:5500");
 naver_id_login.setState(state);
 naver_id_login.setPopup();

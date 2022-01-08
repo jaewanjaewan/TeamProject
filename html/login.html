@@ -46,18 +46,24 @@
                 <a href="/html/find.html"><span>아이디 찾기 | 비밀번호 찾기</span></a>
             </div>
             <div class="logjoin">
-                <input type="submit" class="btn btn-secondary" value="로그인"></input>
-                <a href="/html/join.html"><input type="button" class="btn btn-secondary" value="회원가입"></a>
+                <input type="submit" class="btn btn-secondary" value="로그인">
+                <input type="button" class="btn btn-secondary" value="회원가입" onclick="location.href='/html/join.html'">
+                <!-- a태그로 input을 감싸면 flex가 안먹혀서 onclick으로 링크연결-->
             </div>
         </form>
         <div class="line"></div>
         <div>
             <img src="/img/kakao_login_large_narrow.png" id="kaobtn">
         </div>
+        <div>
+            <a href="https://nid.naver.com/oauth2.0/authorize?response_type=token&amp;client_id=FKI5X4pkLPGeuMSpAt6W&amp;redirect_uri=http%3A%2F%2F127.0.0.1%3A5500%2Fhtml%2Flogin.html&amp;state=aac56330-c0d0-47ad-81a8-8af8a94507c8"
+                onclick="window.open(this.href, 'naverloginpop', 'titlebar=1, resizable=1, scrollbars=yes, width=600, height=550'); return false"
+                id="naver_id_login_anchor">
+                <img src="/img/btnG_완성형.png" id="naver_id_login">
+            </a>
+        </div>
 
-        <!-- <button type="button" class="btn-success">네이버 로그인</button> -->
-        <!-- <div id="naver_id_login"></div> -->
-        <div id="naver_id_login"></div>
+
 
         <!-- Optional JavaScript; choose one of the two! -->
 

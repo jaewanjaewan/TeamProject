@@ -50,7 +50,7 @@ h1{
 }
 .find{
     text-align: center;
-    color: #91aaaa;
+    color: #4a7c7c;
     margin-bottom: 10px;
 }
 .input-group-text{
@@ -71,8 +71,9 @@ h1{
     border: 1px solid white;
 }
 .logjoin{
-    justify-content: right;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
 }
 .line{
     border-top: 2px solid #bfdada;
@@ -90,6 +91,11 @@ h1{
     height: 65px;
 }
 #kaobtn{
+    width: 30%;
+    height: 88px;
+    cursor: pointer; /*마우스올렸을때 손모양으로 바뀜*/
+}
+#naver_id_login{
     width: 30%;
     height: 88px;
 }
