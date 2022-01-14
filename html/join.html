@@ -17,7 +17,7 @@
 <body>
     <div></div>
     <main>
-        <form>
+        <form id="joinFrm">
             <div class="text_box">
                 <h1>회원가입</h1>
                 <h3>체크된 항목은 필수사항입니다.</h3>
@@ -25,7 +25,7 @@
             <div class="row mb-3">
                 <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm" id="id_text">아이디 √</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                    <input type="text" class="form-control form-control-sm" name="checkId" id="colFormLabelSm"
                         placeholder="아이디를 입력해주세요.">
                 </div>
                 <button type="button" class="btn btn-secondary">아이디 중복체크</button>
@@ -34,7 +34,7 @@
                 <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm" id="id_text">비밀번호
                     √</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control form-control-sm" id="colFormLabelSm"
+                    <input type="password" class="form-control form-control-sm" name="passCheck" id="colFormLabelSm"
                         placeholder="비밀번호를 입력해주세요.">
                 </div>
             </div>
@@ -42,14 +42,14 @@
                 <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm" id="id_text">비밀번호 확인
                     √</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control form-control-sm" id="colFormLabelSm"
+                    <input type="password" class="form-control form-control-sm" name="rePassCheck" id="colFormLabelSm"
                         placeholder="비밀번호를 다시 입력해주세요.">
                 </div>
             </div>
             <div class="row mb-3">
                 <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm" id="id_text">이름 √</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                    <input type="text" class="form-control form-control-sm" name="nmCheck" id="colFormLabelSm"
                         placeholder="이름을 입력해주세요.">
                 </div>
             </div>
@@ -74,7 +74,7 @@
             <div class="row mb-3">
                 <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm" id="id_text">휴대폰 √</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm"
+                    <input type="text" class="form-control form-control-sm" name="pNumberCheck" id="colFormLabelSm"
                         placeholder="-없이 번호만 입력해주세요.">
                 </div>
             </div>
@@ -154,7 +154,7 @@
         </div>
         <div class="joinBox">
             <button type="button" class="btn btn-primary">회원가입</button>
-             <input type="checkbox" class="checkbox"> 모두 동의합니다.
+             <input type="checkbox" class="checkbox" id="agree"> 모두 동의합니다.
         </div>
     </main>
     <div></div>
