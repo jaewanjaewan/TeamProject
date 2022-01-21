@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 100px 1fr 80px;
+  grid-template-columns: 200px minmax(800px, 2fr) 200px;
+  grid-template-areas:
+		"header  header  header"
+		"aside  section  blank"
+		"footer  footer  footer";
+}
+
+#headers{
+    background-color: rgb(76, 140, 214);
+    grid-area: header;
+    line-height: 100px;
+    text-align: center;
+}
+
+#aside{
+    background-color: rgb(122, 211, 233); 
+    grid-area: aside;
+    text-align: center;
+    padding-top: 50px;
+}
+
+section{
+    grid-area: section;
+    padding: 10px;
+}
+
+#blank{
+    background-color: rgb(122, 211, 233);  /*나중에 지우기*/
+    grid-area: blank;
+}
+
+#footers{
+    background-color: rgb(76, 140, 214);
+    grid-area: footer;
+}
+
+nav{
+    display: inline-block; /*인라인블록으로 해줘야 정렬이 먹힌다*/
+    width: 50%;
+    padding-top: 10px;
+    color: white;
+}
+
+h1{
+    display: inline-block;
+    padding: 0 35px;
+    cursor: pointer;
+}
+
+h3, h4{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    float: right; /*반응형에서 줄바꿈이 일어나지않음*/
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+#menu{
+    list-style: none;
+    display: inline-block;
+    margin-top: 80px;
+}
+
+#menu > *{ /*자식들 모두선택*/
+    list-style: none;
+    display: inline-block; /*인라인블록으로 해줘야 정렬이 먹힌다*/
+    color: white;
+    font-size: 25px;
+    margin-bottom: 30px;
+    width: 100%;
+}  
+
+#menu li.selected{
+    background: linear-gradient(to right, rgb(5, 52, 182), rgba(120, 240, 240, 0.781)); /*오른쪽으로 갈수록 색상변화*/
+}
+
+#board:hover{
+    background: linear-gradient(to right, rgb(5, 52, 182), rgba(120, 240, 240, 0.781));
+    cursor: pointer;
+}
+
+#service:hover{
+    background: linear-gradient(to right, rgb(5, 52, 182), rgba(120, 240, 240, 0.781));
+    cursor: pointer;
+}
+
+#introduction:hover{
+    background: linear-gradient(to right, rgb(5, 52, 182), rgba(120, 240, 240, 0.781));
+    cursor: pointer;
+}
+
+#notice:hover{
+    background: linear-gradient(to right, rgb(5, 52, 182), rgba(120, 240, 240, 0.781));
+    cursor: pointer;
+}
+
+#customCenter{
+    color: white; 
+    font-size: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+table{
+    position: absolute;
+    width: 78%;
+    border: 1px solid rgb(119, 176, 230);
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+th, td{
+    border: 1px solid rgb(119, 176, 230);
+}
+
+tr{
+    height: 60px;
+    text-align: center;
+}
+
+th{
+    background-color: #ADD8E6;
+}
+
+td{
+    cursor: pointer;
+}
+
+.dataLine:hover{
+    background-color: rgb(217, 229, 235);
+}
+
+.boardContainer{
+    position: relative;
+    height: 100%;
+}
+
+.serviceContainer{
+    height: 100%;
+}
+
+.serviceContainer > div:nth-child(1){
+    border-bottom: 3px solid black;
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.serviceContainer > div:nth-child(2){
+    width: 100%;
+    height: 86%;
+}
+
+.noticeContainer{
+    position: relative;
+    height: 100%;
+    padding-left: 120px;
+}
+
+
+.boardBox{
+    display: inline-block;
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 80.2%; /*%로줘야 반응형으로 줄어든다*/
+}
+
+article{
+    position: absolute;
+    display: inline-block;
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 100%;
+}
+
+article div:nth-child(1){
+    background-color: #ADD8E6;
+    margin-top: 120px;
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgb(119, 176, 230);
+}
+
+article div:nth-child(2){
+    width: 100%;
+    height: 300px;
+    border: 1px solid rgb(119, 176, 230);
+}
+
+.list{
+    padding: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    color: black; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(95, 95, 194); 
+}
+
+details { 
+    margin:5px 0 10px; 
+}
+
+details > summary {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 15%;
+    background:rgb(33, 97, 170); 
+    color:#fff; 
+    padding:10px; 
+    outline:0; 
+    border-radius:5px; 
+    cursor:pointer; 
+    text-align:left; 
+    box-shadow: 5px 5px 6px gray;
+}
+
+p{
+    width: 70%;
+    margin-left: 15%;
+    background-color: rgb(189, 205, 216);
+    padding: 10px;
+}

@@ -1,0 +1,276 @@
+{
+    "result": [
+        {
+            "country": "국산",
+            "companyList": [
+                {
+                    "company": "르노삼성",
+                    "modelList": [
+                        {
+                            "model": "SM5",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "SM5-노바"
+                                },
+                                {
+                                    "detailModel": "뉴SM5 플래티넘"
+                                },
+                                {
+                                    "detailModel": "뉴SM5(10년~12년)"
+                                },
+                                {
+                                    "detailModel": "뉴SM5(05년~07년)"
+                                },
+                                {
+                                    "detailModel": "SM5 뉴 임프레션"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "SM6",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "더 뉴 SM6"
+                                },
+                                {
+                                    "detailModel": "SM6"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "SM7",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "SM7-노바"
+                                },
+                                {
+                                    "detailModel": "All New SM7"
+                                },
+                                {
+                                    "detailModel": "SM7 New Art"
+                                },
+                                {
+                                    "detailModel": "SM7"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "QM5",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "QM5 네오"
+                                },
+                                {
+                                    "detailModel": "뉴QM5"
+                                },
+                                {
+                                    "detailModel": "QM5"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "QM6",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "더 뉴 QM6"
+                                },
+                                {
+                                    "detailModel": "QM6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "company": "쌍용",
+                    "modelList": [
+                        {
+                            "model": "코란도",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "뷰티풀 코란도"
+                                },
+                                {
+                                    "detailModel": "뉴 스타일 코란도 C"
+                                },
+                                {
+                                    "detailModel": "더 뉴 코란도 스포츠"
+                                },
+                                {
+                                    "detailModel": "뉴코란도C"
+                                },
+                                {
+                                    "detailModel": "코란도 투리스모"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "렉스턴",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "더 뉴 렉스턴 스포츠"
+                                },
+                                {
+                                    "detailModel": "더 뉴 렉스턴 스포츠 칸"
+                                },
+                                {
+                                    "detailModel": "올 뉴 렉스턴"
+                                },
+                                {
+                                    "detailModel": "렉스턴 스포츠 칸"
+                                },
+                                {
+                                    "detailModel": "렉스턴 스포츠"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "로디우스",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "로디우스 유로"
+                                },
+                                {
+                                    "detailModel": "뉴로디우스"
+                                },
+                                {
+                                    "detailModel": "로디우스"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "무쏘",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "무쏘 스포츠"
+                                },
+                                {
+                                    "detailModel": "뉴무쏘"
+                                },
+                                {
+                                    "detailModel": "뉴무쏘 밴"
+                                },
+                                {
+                                    "detailModel": "무쏘"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "액티언",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "액티언 스포츠"
+                                },
+                                {
+                                    "detailModel": "액티언"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "company": "기아",
+                    "modelList": [
+                        {
+                            "model": "카니발",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "카니발 4세대"
+                                },
+                                {
+                                    "detailModel": "더 뉴 카니발"
+                                },
+                                {
+                                    "detailModel": "올 뉴 카니발"
+                                },
+                                {
+                                    "detailModel": "카니발 R"
+                                },
+                                {
+                                    "detailModel": "뉴카니발"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "모닝",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "모닝 어반"
+                                },
+                                {
+                                    "detailModel": "올 뉴 모닝(17년~20년)"
+                                },
+                                {
+                                    "detailModel": "올 뉴 모닝(11년~15년)"
+                                },
+                                {
+                                    "detailModel": "더 뉴 모닝"
+                                },
+                                {
+                                    "detailModel": "뉴 모닝"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "K5",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "K5 3세대"
+                                },
+                                {
+                                    "detailModel": "K5 하이브리드 3세대"
+                                },
+                                {
+                                    "detailModel": "더 뉴 K5 하이브리드 2세대"
+                                },
+                                {
+                                    "detailModel": "더 뉴 K5 2세대"
+                                },
+                                {
+                                    "detailModel": "K5 하이브리드"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "K7",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "K7 프리미어"
+                                },
+                                {
+                                    "detailModel": "K7 프리미어 하이브리드"
+                                },
+                                {
+                                    "detailModel": "올 뉴 K7 하이브리드"
+                                },
+                                {
+                                    "detailModel": "올 뉴 K7"
+                                },
+                                {
+                                    "detailModel": "K7하이브리드"
+                                }
+                            ]
+                        },
+                        {
+                            "model": "K9",
+                            "detailModelList": [
+                                {
+                                    "detailModel": "더 뉴 K9 2세대"
+                                },
+                                {
+                                    "detailModel": "더 K9"
+                                },
+                                {
+                                    "detailModel": "더 뉴K9"
+                                },
+                                {
+                                    "detailModel": "K9"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
