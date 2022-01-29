@@ -14,13 +14,31 @@ body{
     width: 100%;
     height: 100%;
 }
-main{
-    position: absolute;
-    top: 40%;
-    margin:-150px 0 0 -150px;
-    height: 527px;
-    left: 46%;
-    width: 80%;
+header{
+    height: 80px;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    height: 120px;
+}
+.container{
+    height: 700px;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+form{
+    height: 55%;
+    margin-top: 10px;
+    width: 70%;
+    margin-left: 15%;
+}
+h1{
+    color: #bfdada;
+    text-align: center;
+    margin-top: 60px;
 }
 a:link {
     text-decoration: none;
@@ -38,15 +56,14 @@ a:active {
     text-decoration: none;
     color: inherit;
 }
-h1{
-    text-align: center;
-    color: #bfdada;
-}
+
 .input-group{
     height: 60px;
     margin-bottom: 10px;
     border: 1px solid #bfdada;
     background-color: #bfdada;
+    width: 50%;
+    margin-left: 25%;
 }
 .find{
     text-align: center;
@@ -58,27 +75,23 @@ h1{
     background-color: #bfdada;
 
 }
-.form{
-    width: 30%;
-}
 .form-control{
     border-left: 1px solid #bfdada;
 }
 .btn{
-    width: 202px;
-    left: 100%;
+    width: 30%;
     background-color: #bfdada;
     border: 1px solid white;
 }
 .logjoin{
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
+    margin-bottom: 60px;
+    margin-left: 28%;
 }
 .line{
     border-top: 2px solid #bfdada;
-    width: 30%;
+    width: 50%;
     height: 10%;
+    margin-left: 25%;
 }
 .btn-warning{
     border: 1px solid white;
@@ -90,12 +103,18 @@ h1{
     width: 30%;
     height: 65px;
 }
+.kaoBox{
+  text-align: center;
+}
 #kaobtn{
-    width: 30%;
+    width: 35%;
     height: 88px;
-    cursor: pointer; /*마우스올렸을때 손모양으로 바뀜*/
+    cursor: pointer; 
+}
+.naverBox{
+   text-align: center;
 }
 #naver_id_login{
-    width: 30%;
+    width: 35%;
     height: 88px;
-}
+}  
