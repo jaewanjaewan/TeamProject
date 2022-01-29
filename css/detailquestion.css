@@ -1,0 +1,39 @@
+.btnBox{
+    border: 1px solid black;
+    height: 100px;
+    width: 100%;
+    margin-top: 40px;
+    vertical-align: bottom;
+}
+
+.writeBtn{
+    float: right;
+    height: 30px;
+    width: 8%;
+    margin-top: 68px;
+}
+
+.modBtn{
+    float: right;
+    height: 30px;
+    width: 8%;
+    margin-top: 68px;
+}
+
+.container{
+    border: 1px solid black;
+    width: 100%;
+    height: 80%;
+}
+
+.title{
+    display: inline-table;
+    margin-left: 10px;
+    margin-top: 68px;
+    font-size: 20px;
+}
+
+.hits{
+    margin-left: 60%;
+    font-size: 20px;
+}

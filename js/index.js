@@ -4,12 +4,12 @@ const introduction = document.querySelector('#introduction');
 const notice = document.querySelector('#notice');
 const menu = document.querySelector('#menu');
 
-
 /*-------------------------- Jquery를 이용하여 section에 각html include -----------------------------*/
 /*$(document).ready()는 문서가 준비되면 매개변수로 넣은 콜백 함수를 실행하라는 의미이다.
    jQuery 이벤트 메서드 중 하나이다. 이 메서드는 비슷한 기능을 수행한다.*/
 $(document).ready(function () {
     $("section").load("/html/questionboard.html");
+    board.classList.add('selected');
 
     board.addEventListener('click', () => {
         $("section").load("/html/questionboard.html");

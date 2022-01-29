@@ -9,44 +9,38 @@ html, body{
     width: 100%;
     height: 100%;
 }
-body{
-    display: grid;
-    grid-template-columns: 1fr minmax(850px, 2fr) 1fr;
+header{
+    height: 80px;
+    text-align: center;
 }
+.container{
+    height: 700px;
+}
+
 main{
-    padding-top: 75px;
+    height: 100%;
 }
-form{
-    margin-top: 100px;
-    height: 250px;
+
+footer{
+    text-align: center;
+    height: 120px;
 }
-.idbox{
-    border-bottom: 2px solid #bfdada;
+
+.phbox{
+    text-align: center;
+    padding-top: 10px;
 }
-.phonebox{
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-top: 15px;
-}
-h1, h3{
-    display: inline-block;
-    color: #bfdada;
-}
+
 .form-control{
-    width: 350px;
-    display: inline-block;
-    margin-left: 40px;
-    height: 45px;
+    height: 100%;
 }
-.btn-secondary{
-    margin-left: 30px;
+
+h1, h4{
+    color: rgb(125, 172, 211);
 }
-.passwordbox{
-    border-bottom: 2px solid #bfdada;
-}
-.textid{
-    padding-left: 50px;
-}
-.id{
-    padding-right: 23px;
+
+h1{
+    border-bottom: 2px solid rgb(138, 192, 228);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }

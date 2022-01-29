@@ -17,50 +17,58 @@
 </head>
 
 <body>
-    <div></div>
-    <main>
-        <form>
-            <div class="idbox">
-                <h1>아이디 찾기</h1>
+    <header class="row">
+        <div class="col-xs-12 bg-primary">header</div>
+    </header>
+    <div class="container">
+        <main class="row">
+            <div class="col-md-2 side"></div>
+            <div class="col-md-8 pt-5 pb-5">
+                <form class="w-100 h-50">
+                    <div class="row">
+                        <h1 class="col-xs-12">아이디 찾기</h1>
+                        <div class="col-xs-3 col-sm-3 col-md-2 phbox">
+                            <h4>휴대폰 번호</h4>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-8 p-0">
+                            <input type="text" class="form-control border border-info" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="-없이 번호만 입력해주세요.">
+                        </div>
+                        <button type="button" class="col-md-2 btn btn-secondary idbtn">아이디 찾기</button>
+                    </div>
+                </form>
+                <form class="w-100 h-50 pt-4">
+                    <div class="row">
+                        <h1 class="col-xs-12">비밀번호 찾기</h1>
+                        <div class="col-xs-3 col-sm-3 col-md-2 phbox">
+                            <h4>아이디</h4>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-8 p-0">
+                            <input type="text" class="form-control border border-info" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="아이디를 입력해주세요.">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-xs-3 col-sm-3 col-md-2 phbox">
+                            <h4>휴대폰 번호</h4>
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-8 p-0">
+                            <input type="text" class="form-control border border-info" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="-없이 번호만 입력해주세요.">
+                        </div>
+                        <button type="button" class="col-md-2 btn btn-secondary idbtn">비밀번호 찾기</button>
+                    </div>
+                </form>
             </div>
-            <div class="phonebox">
-                <h3>휴대폰 번호</h3>
-                <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-default" placeholder="-없이 번호만 입력해주세요.">
-                <button type="button" class="btn btn-secondary">아이디 찾기</button>
-            </div>
-        </form>
-        <form>
-            <div class="passwordbox">
-                <h1>비밀번호 찾기</h1>
-            </div>
-            <div class="phonebox textid">
-                <h3 class="id">아이디</h3>
-                <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-default" placeholder="아이디를 입력해주세요.">
-            </div>
-            <div class="phonebox">
-                <h3>휴대폰 번호</h3>
-                <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-default" placeholder="-없이 번호만 입력해주세요.">
-                <button type="button" class="btn btn-secondary">비밀번호 찾기</button>
-            </div>
-        </form>
-    </main>
-    <div></div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+            <div class="col-md-2"></div>
+        </main>
+    </div>
+    <footer class="row">
+        <div class="col-xs-12 bg-secondary">footer</div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
 </body>
 
 </html>

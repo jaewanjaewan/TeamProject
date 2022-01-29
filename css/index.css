@@ -11,7 +11,7 @@ html, body {
 
 body {
   display: grid;
-  grid-template-rows: 100px 1fr 80px;
+  grid-template-rows: 80px 1fr 70px;
   grid-template-columns: 200px minmax(800px, 2fr) 200px;
   grid-template-areas:
 		"header  header  header"
@@ -22,7 +22,7 @@ body {
 #headers{
     background-color: rgb(76, 140, 214);
     grid-area: header;
-    line-height: 100px;
+    line-height: 85px; /*header높이 이걸로조정*/
     text-align: center;
 }
 
@@ -51,14 +51,16 @@ section{
 nav{
     display: inline-block; /*인라인블록으로 해줘야 정렬이 먹힌다*/
     width: 50%;
-    padding-top: 10px;
     color: white;
+    height: 100%;
+    /* padding-bottom: 20px; 안먹힘 */
 }
 
 h1{
     display: inline-block;
     padding: 0 35px;
     cursor: pointer;
+    height: 100%;
 }
 
 h3, h4{
@@ -234,7 +236,7 @@ details > summary {
     width: 70%;
     margin-top: 30px;
     margin-left: 15%;
-    background:rgb(33, 97, 170); 
+    background:rgb(44, 118, 202); 
     color:#fff; 
     padding:10px; 
     outline:0; 
@@ -247,6 +249,10 @@ details > summary {
 p{
     width: 70%;
     margin-left: 15%;
-    background-color: rgb(189, 205, 216);
+    background-color: rgb(190, 218, 236);
     padding: 10px;
+}
+
+#moreInfo{
+    cursor: pointer;
 }
