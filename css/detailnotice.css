@@ -23,15 +23,6 @@
     height: 75%;
 } */
 
-
-.questionContent{
-    height: 240px;
-}
-
-.answerContent{
-    height: 240px;
-}
-
 .btnBox > div:nth-child(2){
     height: 38px;
     line-height: 40px;

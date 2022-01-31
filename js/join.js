@@ -29,28 +29,34 @@ window.onload = function () { //처음페이지가 열릴때 동적으로 날짜
 }
 
 /*---------------------------- 조건 체크 -----------------------------------*/
-const btnprimary = document.querySelector('.btn-primary');
-if (btnprimary) {
-    const joinFrm = document.querySelector('#joinFrm');
-    const agree = document.querySelector('#agree');
+const form = document.querySelector('form');
+if (form) {
     const blank_pattern = /[\s]/g; //공백금지
-    btnprimary.addEventListener('click', () => {
-        if(joinFrm.checkId.value === '' || blank_pattern.test(joinFrm.checkId.value) == true){ //공백이있다면 true리턴
+    form.addEventListener('submit', (e) => {
+        if(form.checkId.value === '' || blank_pattern.test(form.checkId.value) == true){ //공백이있다면 true리턴
+            e.preventDefault();
             alert('체크된 항목은 필수사항입니다.')
-        } else if(joinFrm.passCheck.value === '' || blank_pattern.test(joinFrm.passCheck.value) == true){
+        } else if(form.passCheck.value === '' || blank_pattern.test(form.passCheck.value) == true){
+            e.preventDefault();
             alert('체크된 항목은 필수사항입니다.')
-        } else if(joinFrm.rePassCheck.value === '' || blank_pattern.test(joinFrm.rePassCheck.value) == true){
+        } else if(form.rePassCheck.value === '' || blank_pattern.test(form.rePassCheck.value) == true){
+            e.preventDefault();
             alert('체크된 항목은 필수사항입니다.')
-        } else if(joinFrm.nmCheck.value === '' || blank_pattern.test(joinFrm.nmCheck.value) == true){
+        } else if(form.nmCheck.value === '' || blank_pattern.test(form.nmCheck.value) == true){
+            e.preventDefault();
             alert('체크된 항목은 필수사항입니다.')
-        } else if(joinFrm.pNumberCheck.value === '' || blank_pattern.test(joinFrm.pNumberCheck.value) == true){
+        } else if(form.pNumberCheck.value === '' || blank_pattern.test(form.pNumberCheck.value) == true){
+            e.preventDefault();
             alert('체크된 항목은 필수사항입니다.')
-        } else if(joinFrm.passCheck.value !== joinFrm.rePassCheck.value){
+        } else if(form.passCheck.value !== form.rePassCheck.value){
+            e.preventDefault();
             alert('비밀번호가 서로 다릅니다.')
-        } else if(joinFrm.passCheck.value.length < 4 || joinFrm.passCheck.value.length > 15){
+        } else if(form.passCheck.value.length < 4 || form.passCheck.value.length > 15){
+            e.preventDefault();
             alert('비밀번호를 4~15글자로 입력해주세요.')
-        } else if(!agree.checked){
+        } else if(!form.agree.checked){
+            e.preventDefault();
             alert('약관에 동의해주세요.')
         }
     })
-} //회원가입 버튼눌렀을땐 ajax통신
+} 
