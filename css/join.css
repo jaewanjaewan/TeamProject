@@ -125,13 +125,26 @@ h3{
 .text_box{
     border-bottom: 2px solid #bfdada;
     padding-bottom: 5px;
+    text-align: center;
 }
 
-.idControl{
+.inpControl{
     display: inline-block;
-    width: 67%;
-    height: 100%;
+    width: 77%;
+    height: 35px;
     margin-left: 20px;
+}
+
+.lbclass{
+    width: 50px;
+}
+
+.lbclass2{
+    width: 60px;
+}
+
+.lbclass3{
+    width: 90px;
 }
 
 .btnbox{
@@ -150,29 +163,12 @@ h3{
     padding-left: 19%;
 }
 
+.common3{
+    padding-left: 14%;
+}
+
 .commonbox{
     height: 38px;
-}
-
-.psinput{
-    display: inline-block;
-    margin-left: 14px;
-    height: 100%;
-    width: 46%;
-}
-
-.psinput1{
-    display: inline-block;
-    margin-left: 22px;
-    height: 100%;
-    width: 47%;
-}
-
-.psinput2{
-    display: inline-block;
-    margin-left: 22px;
-    height: 100%;
-    width: 46%;
 }
 
 .birthday{
@@ -185,7 +181,12 @@ h3{
 }
 
 .email{
-    width: 50%;
+    width: 32%;
+    height: 35px;
+}
+
+.emailml{
+    margin-left: 5%;
 }
 
 .displayInblock{
@@ -216,7 +217,7 @@ h3{
 }
 
 .email{
-    margin-left: 8%;
+    
 }
 
 .termsBox{
