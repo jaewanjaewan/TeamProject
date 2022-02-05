@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="kr">
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,14 +16,35 @@
 </head>
 
 <body>
-    <header class="row">
-        <div class="col-xs-12 bg-primary">header</div>
+    <header>
+        <div>
+            <div id="image_logo_home">
+                <img src="/img/chacha_logo1.png" alt="Logo">
+            </div>
+            <div id="menubar_header">
+                <nav>
+                    <ul>
+                        <li><a href="#">국산</a></li>
+                        <li><a href="#">수입</a></li>
+                        <li><a href="#">내차팔기</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="loginbar_header">
+                <nav>
+                    <ul>
+                        <li><a href="/html/login.html">로그인</a></li>
+                        <li><a href="/html/join.html">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <div class="container">
         <div class="row main">
-            <!-- <div class="col-md-2 border">side</div> -->
             <div class="col-md-12">
-                <form>
+                <form method="post">
                     <h1>로그인</h1>
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping">
@@ -52,8 +73,8 @@
                         <a href="/html/find.html"><span>아이디 찾기 | 비밀번호 찾기</span></a>
                     </div>
                     <div class="logjoin">
-                        <input type="submit" class="btn btn-secondary" value="로그인">
-                        <input type="button" class="btn btn-secondary" value="회원가입"
+                        <input type="submit" class="btn btn-secondary px-0" value="로그인">
+                        <input type="button" class="btn btn-secondary px-0" value="회원가입"
                             onclick="location.href='/html/join.html'">
                         <!-- a태그로 input을 감싸면 flex가 안먹혀서 onclick으로 링크연결-->
                     </div>
@@ -70,11 +91,10 @@
                     </a>
                 </div>
             </div>
-            <!-- <div class="col-md-2 border">side</div> -->
         </div>
     </div>
-    <footer class="row">
-        <div class="col-xs-12 bg-secondary">footer</div>
+    <footer>
+        footer
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -87,5 +107,3 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="/js/login.js"></script>
 </body>
-
-</html>

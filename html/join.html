@@ -15,13 +15,35 @@
 </head>
 
 <body>
-    <header class="row">
-        <div class="col-12 bg-primary">header</div>
+    <header>
+        <div>
+            <div id="image_logo_home">
+                <img src="/img/chacha_logo1.png" alt="Logo">
+            </div>
+            <div id="menubar_header">
+                <nav>
+                    <ul>
+                        <li><a href="#">국산</a></li>
+                        <li><a href="#">수입</a></li>
+                        <li><a href="#">내차팔기</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="loginbar_header">
+                <nav>
+                    <ul>
+                        <li><a href="/html/login.html">로그인</a></li>
+                        <li><a href="/html/join.html">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
-            <form class="col-md-8 border">
+            <form class="col-md-8 border" method="post">
                 <div class="row text_box">
                     <h1 class="col-md-4">회원가입</h1>
                     <h3 class="col-md-8">체크된 항목은 필수사항입니다.</h3>
@@ -29,54 +51,56 @@
                 <div class="row mb-3 mt-3">
                     <div class="col-9 common">
                         <label for="colFormLabelSm" class="col-form-label col-form-label-sm" id="id_text">아이디 √</label>
-                        <input type="text" class="form-control form-control-sm idControl" name="checkId" id="colFormLabelSm"
-                            placeholder="아이디를 입력해주세요.">
+                        <input type="text" class="form-control form-control-sm idControl" name="checkId"
+                            id="colFormLabelSm" placeholder="아이디를 입력해주세요.">
                     </div>
                     <div class="col-3 btnbox">
-                        <button type="button" class="btn btn-secondary">중복체크</button>
+                        <button type="button" class="btn btn-primary">중복체크</button>
                     </div>
                 </div>
                 <div class="row mb-3 mt-3 commonbox">
-                    <div class="col-9 common1">
+                    <div class="col-12 common1">
                         <label for="colFormLabelSm" class="col-form-label col-form-label-sm" id="id_text">비밀번호 √</label>
                         <input type="text" class="form-control form-control-sm psinput" name="passCheck"
                             id="colFormLabelSm" placeholder="비밀번호는 4~15글자로 입력해주세요.">
                     </div>
                 </div>
                 <div class="row mb-3 mt-3 commonbox">
-                    <div class="col-9 common1">
+                    <div class="col-12 common1">
                         <label for="colFormLabelSm" class="col-form-label col-form-label-sm" id="id_text">비밀번호 √</label>
                         <input type="text" class="form-control form-control-sm psinput" name="rePassCheck"
                             id="colFormLabelSm" placeholder="비밀번호를 다시입력해주세요.">
                     </div>
                 </div>
                 <div class="row mb-3 mt-3 commonbox">
-                    <div class="col-9 common1 common2">
+                    <div class="col-12 common2">
                         <label for="colFormLabelSm" class="col-form-label col-form-label-sm" id="id_text">이름 √</label>
                         <input type="text" class="form-control form-control-sm psinput1" name="nmCheck"
                             id="colFormLabelSm" placeholder="이름을 입력해주세요.">
                     </div>
                 </div>
-                <div class="row mb-3 birthdayBox">
-                    <label for="colFormLabelSm" class="col-3 col-form-label col-form-label-sm birthday"
-                        id="id_text">생년월일
-                        √</label>
-                    <table class="table col-9">
-                        <tr>
-                            <td>
-                                <select id="year" name="year"></select>
-                            </td>
-                            <td>
-                                <select id="month" name="month"></select>
-                            </td>
-                            <td>
-                                <select id="day" name="day"></select>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="row mb-3 commonbox">
+                    <div class="col-12 common1">
+                        <label for="colFormLabelSm" class="col-form-label col-form-label-sm birthday"
+                            id="id_text">생년월일
+                            √</label>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <select id="year" name="year"></select>
+                                </td>
+                                <td>
+                                    <select id="month" name="month"></select>
+                                </td>
+                                <td>
+                                    <select id="day" name="day"></select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="row mb-3">
-                    <div class="col-9 common">
+                    <div class="col-12 common">
                         <label for="colFormLabelSm" class="col-form-label col-form-label-sm" id="id_text">휴대폰 √</label>
                         <input type="text" class="form-control form-control-sm psinput2" name="pNumberCheck"
                             id="colFormLabelSm" placeholder="-없이 번호만 입력해주세요.">
@@ -85,9 +109,8 @@
                 <div class="row mb-3" id="email_box">
                     <div class="col-9 malabelbox">
                         <label for="colFormLabelSm" class="col-form-label col-form-label-sm" id="id_text">이메일</label>
-                    <!-- </div> -->
-                    <!-- <div class="input-group mb-3 col-10"> -->
-                        <input type="text" class="form-control displayInblock w-25 email" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control displayInblock w-25 email" aria-label="Username"
+                            aria-describedby="basic-addon1">
                         <span class="input-group-text displayInblock" id="basic-addon1">@</span>
                         <select class="form-select displayInblock w-25" aria-label=".form-select-lg example">
                             <option value="1" selected>naver.com</option>
@@ -102,17 +125,17 @@
                         <!-- 한번에 변수명,글수정 단축키: ctrl+shift+l -->
                         <br>제 1장 총칙<br>
                         <br>제 1 조(목적)<br><br>
-                        본 약관은 웹사이트(이하 "중고차거래사이트")가 제공하는 모든 서비스(이하 "서비스")의 이용조건 및 절차, 회원과 중고차거래사이트의 권리, 의무, 책임사항과 기타
+                        본 약관은 웹사이트(이하 "내차네차")가 제공하는 모든 서비스(이하 "서비스")의 이용조건 및 절차, 회원과 내차네차의 권리, 의무, 책임사항과 기타
                         필요한 사항을 규정함을 목적으로 합니다.<br>
                         <br>제 2 조(약관의 효력과 변경)<br><br>
-                        1. 중고차거래사이트은 이용자가 본 약관 내용에 동의하는 경우, 중고차거래사이트의 서비스 제공 행위 및 회원의 서비스 사용 행위에 본 약관이 우선적으로
+                        1. 내차네차은 이용자가 본 약관 내용에 동의하는 경우, 내차네차의 서비스 제공 행위 및 회원의 서비스 사용 행위에 본 약관이 우선적으로
                         적용됩니다.<br>
-                        2. 중고차거래사이트은 약관을 개정할 경우, 적용일자 및 개정사유를 명시하여 현행약관과 함께 중고차거래사이트의 초기화면에 그 적용일 7일 이전부터 적용 전일까지
+                        2. 내차네차은 약관을 개정할 경우, 적용일자 및 개정사유를 명시하여 현행약관과 함께 내차네차의 초기화면에 그 적용일 7일 이전부터 적용 전일까지
                         공지합니다. 단,
-                        회원에 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 중고차거래사이트은 개정 전 내용과 개정 후 내용을
+                        회원에 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 내차네차은 개정 전 내용과 개정 후 내용을
                         명확하게 비교하여
                         회원이 알기 쉽도록 표시합니다.<br>
-                        3. 변경된 약관은 중고차거래사이트 홈페이지에 공지하거나 e-mail을 통해 회원에게 공지하며, 약관의 부칙에 명시된 날부터 그 효력이 발생됩니다. 회원이 변경된
+                        3. 변경된 약관은 내차네차 홈페이지에 공지하거나 e-mail을 통해 회원에게 공지하며, 약관의 부칙에 명시된 날부터 그 효력이 발생됩니다. 회원이 변경된
                         약관에 동의하지
                         않는 경우, 회원은 본인의 회원등록을 취소(회원탈퇴)할 수 있으며, 변경된 약관의 효력 발생일로부터 7일 이내에 거부의사를 표시하지 아니하고 서비스를 계속 사용할
                         경우는 약관
@@ -122,10 +145,10 @@
                         의합니다.<br>
                         <br>제 4 조(용어의 정의)<br><br>
                         본 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
-                        1. 이용자 : 본 약관에 따라 중고차거래사이트이 제공하는 서비스를 받는 자<br>
-                        2. 가입 : 중고차거래사이트이 제공하는 신청서 양식에 해당 정보를 기입하고, 본 약관에 동의하여 서비스 이용계약을 완료시키는 행위<br>
-                        3. 회원 : 중고차거래사이트에 개인 정보를 제공하여 회원 등록을 한 자로서 중고차거래사이트이 제공하는 서비스를 이용할 수 있는 자.<br>
-                        4. 계정(ID) : 회원의 식별과 회원의 서비스 이용을 위하여 회원이 선정하고 중고차거래사이트에서 부여하는 문자와 숫자의 조합<br>
+                        1. 이용자 : 본 약관에 따라 내차네차이 제공하는 서비스를 받는 자<br>
+                        2. 가입 : 내차네차이 제공하는 신청서 양식에 해당 정보를 기입하고, 본 약관에 동의하여 서비스 이용계약을 완료시키는 행위<br>
+                        3. 회원 : 내차네차에 개인 정보를 제공하여 회원 등록을 한 자로서 내차네차이 제공하는 서비스를 이용할 수 있는 자.<br>
+                        4. 계정(ID) : 회원의 식별과 회원의 서비스 이용을 위하여 회원이 선정하고 내차네차에서 부여하는 문자와 숫자의 조합<br>
                         5. 비밀번호 : 회원과 계정이 일치하는지를 확인하고 통신상의 자신의 비밀보호를 위하여 회원 자신이 선정한 문자와 숫자의 조합<br>
                         6. 탈퇴 : 회원이 이용계약을 종료시키는 행위<br>
                         7. 본 약관에서 정의하지 않은 용어는 개별서비스에 대한 별도 약관 및 이용규정에서 정의합니다.<br>
@@ -133,10 +156,10 @@
                     <div class="col-sm-6 border termsBox mb-3">
                         <h5>개인정보 수집 및 이용에 대한 안내</h5>
                         <b>가. 개인정보의 수집 및 이용 목적</b><br>
-                        ① 중고차거래사이트는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는
+                        ① 내차네차는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는
                         개인정보
                         보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.<br>
-                        <b style="font-size: 17px; color: #007dcd;">1. 중고차거래사이트 서비스 제공을 위한 회원관리</b><br>
+                        <b style="font-size: 17px; color: #007dcd;">1. 내차네차 서비스 제공을 위한 회원관리</b><br>
                         <b style="font-size: 17px; color: #007dcd;">1) 공간정보 다운로드, 오픈API 신청 및 활용 등 포털 서비스 제공과 서비스 부정이용
                             방지를
                             목적으로 개인정보를 <br>&nbsp;&nbsp;&nbsp;처리합니다.</b><br>
@@ -154,12 +177,12 @@
                         ⑥ 정보주체 권리에 따른 열람의 요구, 정정ㆍ삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.</b><br>
 
                         <br><b>다. 수집하는 개인정보의 항목</b><br>
-                        <b style="font-size: 14px; color: #007dcd;">① 중고차거래사이트 회원정보(필수): 이름, 이메일(아이디), 비밀번호</b><br>
+                        <b style="font-size: 14px; color: #007dcd;">① 내차네차 회원정보(필수): 이름, 이메일(아이디), 비밀번호</b><br>
 
                         <br><b>라. 개인정보의 보유 및 이용기간</b><br>
-                        ① 중고차거래사이트은 법령에 따른 개인정보 보유ㆍ이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의 받은 개인정보 보유ㆍ이용기간 내에서 개인정보를
+                        ① 내차네차은 법령에 따른 개인정보 보유ㆍ이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의 받은 개인정보 보유ㆍ이용기간 내에서 개인정보를
                         처리ㆍ보유합니다.<br>
-                        <b style="font-size: 14px; color: #007dcd;">1. 중고차거래사이트 회원정보</b><br>
+                        <b style="font-size: 14px; color: #007dcd;">1. 내차네차 회원정보</b><br>
                         <b style="font-size: 14px; color: #007dcd;">- 수집근거: 정보주체의 동의</b><br>
                         <b style="font-size: 17px; color: #007dcd;">- 보존기간: 회원 탈퇴 요청 전까지(1년 경과 시 재동의)</b><br>
                         <b style="font-size: 14px; color: #007dcd;">- 보존근거: 정보주체의 동의</b><br>
@@ -178,8 +201,8 @@
             <div class="col-md-2"></div>
         </div>
     </div>
-    <footer class="row">
-        <div class="col-12 bg-secondary">footer</div>
+    <footer>
+        footer
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -2,6 +2,7 @@
 // const menu = document.querySelector('#menu');
 // const notice = document.querySelector('#notice');
 const trArr = document.querySelectorAll('tr');
+const writeBtn = document.querySelector('button');
 
 /*--------------------------더보기 클릭했을시 공지사항페이지로 이동-----------------------------------*/
 /*moreInfo.addEventListener('click', () => {
@@ -17,4 +18,9 @@ trArr.forEach(item => {
     item.addEventListener('click', () => {
         $("section").load("/html/detailquestion.html");
     })
+})
+
+/*--------------------------클릭했을시 글쓰기페이지로 이동-----------------------------------*/
+writeBtn.addEventListener('click', () => {
+    $("section").load("/html/write.html");
 })

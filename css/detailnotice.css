@@ -6,22 +6,9 @@
     vertical-align: bottom;
 }
 
-.writeBtn{
+button{
     float: right;
-    /* height: 30px; */
-    /* width: 8%; */
 }
-
-.modBtn{
-    float: right;
-    /* height: 30px; */
-    /* width: 8%; */
-}
-
-/* .detailContainer{
-    width: 100%;
-    height: 75%;
-} */
 
 .btnBox > div:nth-child(2){
     height: 38px;

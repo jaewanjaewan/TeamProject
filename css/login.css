@@ -2,56 +2,160 @@
     box-sizing: border-box; 
     font-family: 'Jua', sans-serif;
  }
+
 html, body{ 
      margin: 0;
      padding: 0;
  }
+
 html{
      height: 100%;
+     width: 100%;
 }
+
 body{
     position: relative;
     width: 100%;
     height: 100%;
 }
-header{
-    height: 80px;
-    text-align: center;
+
+/* 헤더 --------------------------------------------------------- [start] */
+header {
+    background-color: rgb(113, 216, 253);
+    /* position: sticky;  */
+    top: 0;
+    display: grid; grid-template-columns: 1fr 8fr 1fr;
+    height: 100px;
+    width: 100%;
 }
+
+nav {
+    width: 100%; 
+}
+
+ul { 
+   list-style: none; padding-left: 0px; 
+}
+
+header > div {
+    /* background-color: pink; */
+    grid-column: 2/3;
+    display: grid; grid-template-columns: 1fr 4fr 1fr;
+}
+/* 헤더>로고 ---------------------------------------------------- [start] */
+header #image_logo_home {
+    /* background-color: purple; */
+    display: flex;  align-items: center;
+}
+
+header #image_logo_home > img {
+    width: 190px; height: 70px;
+}
+
+/* 헤더>메뉴바 -------------------------------------------------- [start] */
+#menubar_header {
+    /* background-color: rgb(160, 28, 160); */
+    display: flex;  align-items: center;
+}
+
+#menubar_header > nav {
+    /* background-color: brown; */
+    /* line-height: 80px; */
+}
+
+#menubar_header > nav > ul {
+    /* background-color: orange; */
+    display: flex; justify-content: space-around;
+    margin-bottom: 0;
+}
+
+#menubar_header > nav > ul > li {
+    /* background-color: rgb(195, 235, 250); */
+    font-size: 150%;
+}
+
+#menubar_header > nav > ul > li > a {
+    color: white; font-weight: 800;
+    text-decoration: none; 
+}
+
+#menubar_header > nav > ul > li > a:focus {
+    color: rgb(45, 45, 161);
+}
+
+/* 헤더>로그인바 ------------------------------------------------ [start] */
+#loginbar_header {
+    /* background-color: rgb(212, 40, 212); */
+    display: flex;  align-items: flex-end;
+}
+
+#loginbar_header > nav {
+    /* background-color: brown; */
+}
+
+#loginbar_header > nav > ul {
+    /* background-color: orange; */
+    display: flex; justify-content: space-around;
+}
+
+#loginbar_header > nav > ul > li {
+    /* background-color: rgb(195, 235, 250); */
+    font-size: 100%;
+}
+
+#loginbar_header > nav > ul > li > a {
+    color: white;
+    text-decoration: none; 
+}
+
+#loginbar_header > nav > ul > li > a:focus {
+    color: rgb(45, 45, 161);
+}
+/* 헤더 --------------------------------------------------------- [end] */
 footer{
     text-align: center;
-    height: 120px;
+    height: 200px;
+    width: 100%;
+    background-color: gray;
 }
+
 .container{
     height: 700px;
 }
+
 .main{
     height: 100%;
     width: 100%;
 }
+
 form{
     height: 55%;
     margin-top: 10px;
     width: 70%;
     margin-left: 15%;
 }
+
 h1{
     color: #bfdada;
     text-align: center;
     margin-top: 60px;
 }
+
 a:link {
     text-decoration: none;
     color: inherit;
 }
+
 a:visited {
     text-decoration: none;
     color: #bfdada;
 }
+
 a:hover {
     text-decoration: none;
     color: inherit;
 }
+
 a:active {
     text-decoration: none;
     color: inherit;
@@ -65,55 +169,66 @@ a:active {
     width: 50%;
     margin-left: 25%;
 }
+
 .find{
     text-align: center;
     color: #4a7c7c;
     margin-bottom: 10px;
 }
+
 .input-group-text{
     border: 1px solid #bfdada;
     background-color: #bfdada;
-
 }
+
 .form-control{
     border-left: 1px solid #bfdada;
 }
+
 .btn{
     width: 30%;
     background-color: #bfdada;
     border: 1px solid white;
 }
+
 .logjoin{
     margin-bottom: 60px;
     margin-left: 28%;
 }
+
 .line{
     border-top: 2px solid #bfdada;
     width: 50%;
     height: 10%;
     margin-left: 25%;
 }
+
 .btn-warning{
     border: 1px solid white;
     width: 30%;
     height: 65px;
 }
+
 .btn-success{
     border: 1px solid white;
     width: 30%;
     height: 65px;
 }
+
 .kaoBox{
   text-align: center;
 }
+
 #kaobtn{
     width: 35%;
     height: 88px;
     cursor: pointer; 
 }
+
 .naverBox{
    text-align: center;
 }
+
 #naver_id_login{
     width: 35%;
     height: 88px;
