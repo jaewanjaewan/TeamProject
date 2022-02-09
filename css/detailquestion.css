@@ -2,20 +2,21 @@
     padding: 5px;
     height: 100px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 80px;
     vertical-align: bottom;
 }
 
 button{
     float: right;
+    margin-top: 30px;
 }
 
 .questionContent{
-    height: 240px;
+    height: 220px;
 }
 
 .answerContent{
-    height: 240px;
+    height: 220px;
 }
 
 .btnBox > div:nth-child(2){
